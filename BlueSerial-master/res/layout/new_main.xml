@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnDisconnect"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:text="Disconnect" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/chkScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:checked="true"
+                android:text="Scroll" />
+
+            <CheckBox
+                android:id="@+id/chkReceiveText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Read" />
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+        />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editSend_2"
+        android:layout_below="@+id/editSend_2"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+    
+    
+   <ScrollView
+        android:id="@+id/viewScroll"
+        android:layout_width="fill_parent"
+         android:layout_alignRight="@+id/btnSend"
+       android:layout_below="@+id/btnSend"
+       android:layout_marginTop="44dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.84" >
+    </ScrollView>
+
+   <EditText
+       android:id="@+id/editSend_1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/linearLayout1"
+       android:layout_below="@+id/linearLayout1"
+       android:layout_marginTop="20dp"
+       android:ems="10"
+       android:hint="Enter UserName...."
+       android:inputType="text"
+       android:textColor="@color/darkblue" >
+
+       <requestFocus />
+   </EditText>
+
+   <EditText
+       android:id="@+id/editSend_2"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/edit"
+       android:layout_below="@+id/editSend_1"
+       android:layout_marginTop="31dp"
+       android:ems="10"
+       android:hint="Enter Password...."
+       android:inputType="textPassword"
+       android:textColor="@color/darkblue" />
+
+   <TextView
+       android:id="@+id/txtaddReceive"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignRight="@+id/btnSend"
+       android:layout_marginBottom="54dp"
+       android:background="#eeeeee"
+       android:hint="Message shows up here ..."
+       android:scrollbars="vertical"
+       android:textColor="@color/red"
+       android:textSize="20dp"
+       android:typeface="monospace" />
+
+   <Button
+       android:id="@+id/btnCredit"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/txtaddReceive"
+       android:layout_alignParentBottom="true"
+       android:text="Credits"
+       android:onClick="onOpenCreditTab"
+       android:textColorHint="@color/orange" />
+    
+</RelativeLayout> <!-- </RelativeLayout> -->
+
+
